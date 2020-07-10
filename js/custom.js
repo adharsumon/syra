@@ -84,17 +84,15 @@ $(function () {
         arrows: true,
         nextArrow: ".btn_right",
         prevArrow: ".btn_left",
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-    },
-  ]
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        }, ]
     });
 
 
@@ -124,7 +122,10 @@ $(function () {
 
 
 
-
+    // preventDefault JS HERE
+    $('.tma').on('click', function (e) {
+        e.preventDefault();
+    });
 
 
 });

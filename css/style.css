@@ -12,6 +12,13 @@ ul {
     list-style: none;
 }
 
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 body {
 
     background: #fdfdfd;
@@ -97,7 +104,6 @@ a:hover {
 /*=============================
     02.  HEADER CSS
 ==============================*/
-.header_part {}
 
 .main_menu {
     position: absolute;
@@ -115,6 +121,10 @@ a:hover {
     color: #fff;
     text-transform: capitalize;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -132,8 +142,6 @@ a:hover {
 .banner_part.bg_cover {
     padding-top: 128px;
 }
-
-.banner_text {}
 
 .banner_text span {
     font-size: 40px;
@@ -176,6 +184,10 @@ a:hover {
     position: relative;
     transition: all .3s linear;
     margin-bottom: 135px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .banner_text .theme_btn::before {
@@ -243,8 +255,6 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.story_btnn {}
-
 .story_btnn a {
     color: #fff;
     background: var(--colorTwo);
@@ -254,6 +264,10 @@ a:hover {
     position: relative;
     transition: all .3s linear;
     text-transform: capitalize;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .story_btnn a::before {
@@ -301,6 +315,17 @@ a:hover {
 .image_bottle img {
     margin-bottom: -60px;
     padding: 0 60px;
+    filter: grayscale(0);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_products:hover .image_bottle>img {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
 }
 
 .product_text h4 {
@@ -469,14 +494,14 @@ a:hover {
     flex-wrap: wrap;
 }
 
-#clockdiv > div {
+#clockdiv>div {
     padding: 10px;
     border-radius: 3px;
     display: inline-block;
 
 }
 
-#clockdiv div > span {
+#clockdiv div>span {
     border-radius: 3px;
     display: inline-block;
     font-size: 46px;
@@ -518,7 +543,6 @@ a:hover {
 /*=============================
     07.  UPDATES PART CSS
 ==============================*/
-.update_text {}
 
 .update_text h2 {
     font-family: 'Great Vibes', cursive;
@@ -549,8 +573,6 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.update_btn {}
-
 .update_btn .btn_left,
 .btn_right {
     background: transparent;
@@ -566,6 +588,10 @@ a:hover {
     margin-right: 5px;
     transition: all .3s linear;
     position: relative;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .update_btn .btn_left .fa {
@@ -608,13 +634,6 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-/*
-.update_image {
-    position: relative;
-}
-*/
-
 .update_time {
     text-align: center;
     background: var(--themeColor);
@@ -624,6 +643,10 @@ a:hover {
     transition: all .3s linear;
     top: 43%;
     left: 8%;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .update_time .wrapp {
@@ -682,6 +705,10 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .update_info a:hover::before {
@@ -698,8 +725,6 @@ a:hover {
     border-bottom: 1px solid #181c21;
     margin-bottom: 60px !important;
 }
-
-.footer_info {}
 
 .footer_info .single_icon {
     display: flex;
@@ -724,15 +749,13 @@ a:hover {
     margin-right: 30px;
 }
 
-.iconn .number {}
-
 .number span {
     color: #fff;
     font-size: 18px;
     display: block;
 }
 
-/* FOOTER MENU PART */
+/***************************** FOOTER MENU PART ****************************/
 
 .footer_menu ul li a {
     font-size: 20px;
@@ -740,6 +763,10 @@ a:hover {
     margin-bottom: 30px;
     margin-left: 50px;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .footer_menu ul li a:hover {
@@ -747,8 +774,6 @@ a:hover {
 }
 
 /* FOOTER RIGHT PART */
-
-.footer_right {}
 
 .footer_subs {
     position: relative;
@@ -778,6 +803,10 @@ a:hover {
     background: var(--colorTwo);
     padding: 20px 30px;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .subs_btn a:hover {
@@ -788,45 +817,61 @@ a:hover {
     border: 5px solid #171a1e;
 }
 
-/* FOOTER BOTTOM */
-.row.bottom {
-    border-top: 1px solid #171a1e;
-    margin-top: 20px;
+/*************************** FOOTER BOTTOM *****************************/
+
+.bottom_wrap {
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid #171a1e;
+}
+
+.copyright {
+    width: 50%;
 }
 
 .copyright span {
     font-size: 16px;
     color: #fff;
     text-align: left;
+    text-transform: capitalize;
 }
 
-.footer_social {}
-
-.footer_social ul {
-    text-align: right;
-    margin: 0;
+.footer_social {
+	margin-right: 5px;
+	width: 50%;
+	display: flex;
+	justify-content: end;
 }
+
+.footer_social ul {}
 
 .footer_social ul li {
     display: inline-block;
+    text-align: center;
+    margin-right: -5px;
 }
 
-.footer_social ul li a .fa {
+.footer_social ul li a {
     font-size: 16px;
-    color: #fff;
-    padding: 30px 20px;
     background: transparent;
-    border: 1px solid #171a1e;
-    margin-left: -4px;
+    padding: 25px 20px;
+    color: antiquewhite;
+    border-left: 1px solid #171a1e;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
-.footer_social ul li a .fa:hover {
-    background: var(--colorTwo);
-    color: #444;
-    border: transparent;
+.footer_social ul li a:hover {
+    background: #e3d1b8;
+    color: #222;
+}
+
+.footer_social ul li:last-child a {
+    border-right: 1px solid #171a1e;
 }
 
 /**********************************BACK TO TOP CSS *************************************/
@@ -846,6 +891,9 @@ a:hover {
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
     display: none;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
 }
 
 .back-to-top:hover {
@@ -895,6 +943,10 @@ a:hover {
     display: block;
     content: '';
     transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
 }
 
 * {
